@@ -1,5 +1,7 @@
 # Apple ][ Joystick and Paddles tester
 
+## Introduction
+
 Collectionneur de matériels Apple, j'avais quelques joysticks et paddles Apple à tester.
 Comme je ne voulais pas risquer d'abimer un Apple IIe pour les tests, un court-circuit dans les vieux matériels étant vite arrivés, j'ai décidé de me construire un petit montage de test.
 J'ai bien évidemment commencé par cabler sur une plaque Lab, et j'ai décidé, pour m'amuser, d'aller plus loin en construisant le circuit imprimé.
@@ -26,6 +28,9 @@ J'ai noté une petite différence de position entre le joystick et les paddles, 
 
 Le tout est placé dans un boitier de montage aux dimensions de 100x60x25 mm en ABS trouvé chez AliExpress. Deux trous ont été faits pour laisser passer le cable USB-C de l'alimentation de l'Arduino, et le connecteur DB9.
 
+
+## Construction
+
 Pour la liste des composants :
 - 1 x Arduino mini, par exemple chez AliExpress : https://www.aliexpress.com/item/1994733794.html
 - 1 x écran OLED I2C 0.96" (VCC, GND, SCL, SDA), par exemple chez AliExpress : https://fr.aliexpress.com/item/1005006901360788.html
@@ -42,8 +47,15 @@ Le circuit imprimé a été fabriqué par JLCPCB https://jlcpcb.com. La commande
 
 
 Note 1 : les liens ci-dessus sont pour l'achat en lot, pas à l'unité, pour des questions de couts.
-Note 2 : les liens peuvent être faux, le vendeur AliExpress ayant arrêté la vente du produit voulu
+Note 2 : les liens peuvent être faux, le vendeur AliExpress ayant arrêté la vente du produit voulu.
 
 Je n'ai pas placé l'Arduino sur des connecteurs pour des questions de hauteur de boitier. Le boitier se referme est est protégé entièrement.
 
+## Programmation
 
+L'application Arduido IDE a été utilisé. Rien de vraiment spécial dans la programmation de ce montage. Chaque ligne ou presque du programme est documenté.
+
+## Licence
+
+Vous en faites ce que vous voulez. Je peux me tromper mais je ne vois pas vraiment un industriel construire ce montage pour le vendre à des milliers d'exemplaires et gagner des millions d'euros ou de dollars ! ;-)
+Pour moi, cela a surtout été une bonne expérience amusante de faire ce petit montage, et c'est pourquoi je le mets en libre diposition. 
