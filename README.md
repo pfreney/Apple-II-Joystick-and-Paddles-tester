@@ -36,8 +36,13 @@ Pour la liste des composants :
 - 2 x résistance (R4, R5) smd 1206 de 180 Ω, par exemple chez AliExpress : https://fr.aliexpress.com/item/1005005681179895.html
 - 1 x bouton poussoir smd 2 broches 3x6x2.5 mm, par exemple chez AliExpress : https://fr.aliexpress.com/item/1005006364026072.html
 - 2 x LED smd 1206 blanche, par exemple chez AliExpress : https://fr.aliexpress.com/item/4001031824623.html
+- 1 x boitier ABS 100x60x25 mm, par exemple chez AliExpress : https://www.aliexpress.com/item/1005006412728406.html
 
-Les liens ci-dessus sont pour l'achat en lot, pas à l'unité, pour des questions de couts.
+Le circuit imprimé a été fabriqué par JLCPCB https://jlcpcb.com. La commande minimale est de 5 circuits pour un total de 8.68 €, soit 1.8 € le cicuit, port et taxes incluses à destination de la France.
+
+
+Note 1 : les liens ci-dessus sont pour l'achat en lot, pas à l'unité, pour des questions de couts.
+Note 2 : les liens peuvent être faux, le vendeur AliExpress ayant arrêté la vente du produit voulu
 
 Je n'ai pas placé l'Arduino sur des connecteurs pour des questions de hauteur de boitier. Le boitier se referme est est protégé entièrement.
 
