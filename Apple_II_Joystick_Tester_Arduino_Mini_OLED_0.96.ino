@@ -4,7 +4,7 @@
 //
 // Patrice Freney - https://www.freney.net
 //
-// version 1.0 du 2025/01/03
+// version 1.0 du 2025/02/03
 
 // carte Arduino mini
 // ecran OLED noir et blanc de 128 x 64 pixels de 0.96 pouces
