@@ -4,7 +4,7 @@
 //
 // Patrice Freney - https://www.freney.net
 //
-// version 1.0 du 2025/02/03
+// version 1.0 du 2025/02/05
 
 // carte Arduino mini
 // ecran OLED noir et blanc de 128 x 64 pixels de 0.96 pouces
@@ -26,7 +26,7 @@
 // led 1 sur la sortie D11
 // led 2 sur la sortie D12
 
-// Arduino Application version 2.34
+// Arduino Application version 2.3.4
 //
 // Adafruit_GFX.h version 1.11.1
 // Adafruit_SSD1306.h version 2.5.13
@@ -49,9 +49,9 @@
 #include <Wire.h>              // communication avec les écrans I2c
 #include <Adafruit_GFX.h>      // gestion des écrans, https://github.com/adafruit/Adafruit-GFX-Library
 #include <Adafruit_SSD1306.h>  // gestion de l'écran SSD1306, https://github.com/adafruit/Adafruit_SSD1306
-#include <Bounce2.h>           // gestion des boutons, https://github.com/thomasfredericks/Bounce2
+#include <Bounce2.h>           // gestion des boutons anti-rebondissement, https://github.com/thomasfredericks/Bounce2
 
-Adafruit_SSD1306 display(128, 64, &Wire, -1);  // Declaration pour un écran SSD1306 connecté à I2C (SDA, SCL)
+Adafruit_SSD1306 display(128, 64, &Wire, -1);  // déclaration pour un écran SSD1306 connecté à I2C (SDA, SCL)
 
 // Bounce2
 Bounce2::Button button = Bounce2::Button();  // INSTANTIATE A Button OBJECT
@@ -150,15 +150,23 @@ void loop() {
   // les coordonnées ve_curseur_x et ve_curseur_y représentent le centre du curseur en forme de croix
 
   // calculs des coordonnées du curseur x et y selon le mode Joystick ou paddles.
-  // il y a quelques différences et comme le chiffres minimaux ne sont pas les mêmes, le curseur pouvait sortir de l'écran.
+  // il y a quelques différences et comme les chiffres minimaux ne sont pas les mêmes, le curseur pouvait sortir de l'écran.
   // donc, choix avec le bouton du mode pour les tests.
-
   if (vb_button_jp_stat_joystick == true) {  // mode joystick, mesures relevées
     ve_curseur_x = map(ve_axex_valeur, 1023, 542, 1, 64);
     ve_curseur_y = map(ve_axey_valeur, 1023, 542, 1, 64);
-      } else {  // mode paddles, mesures relevées
+  } else {  // mode paddles, mesures relevées
     ve_curseur_x = map(ve_axex_valeur, 1023, 460, 1, 64);
     ve_curseur_y = map(ve_axey_valeur, 1023, 480, 1, 64);
+  }
+
+  // vérification des valeurs maximales x et y
+  // avec certains paddles, les potentiomètres mal calibrés ou défaillants faisaient sortir la croix de l'écran
+  if (ve_curseur_x > 64) {  // si pour une raison diverse, le calcul de ve_curseur_x >64, valeur maximale = 64
+    ve_curseur_x = 64;
+  }
+  if (ve_curseur_y > 64) {  // si pour une raison diverse, le calcul de ve_curseur_y  >64, valeur maximale = 64
+    ve_curseur_y = 64;
   }
 
   // dessin du curseur 5x5 pixels
@@ -211,3 +219,4 @@ void loop() {
 
 
 // ************************************************************
+
