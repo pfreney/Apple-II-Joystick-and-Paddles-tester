@@ -17,7 +17,7 @@ Le montage permet de connecter l'un ou l'autre :
 - le joystick avec un connecteur 9 broches femele
 - les paddles avec un support ZIF (zéro insertion force) 16 broches
 
-L'alimentation s'effectue avec un chargeur USB standard et un cable USC-C, en 5 Volt.
+L'alimentation s'effectue avec un chargeur USB standard et un cable USC-C directement branché sur l'Arduino. C'est lui qui alimente le reste du circuit.
 
 Des informations sont inscrites sur un écran 0.96", largement suffisant pour cette utilisation.
 Le but est d'afficher une petite croix en fonction de la position des manettes.
