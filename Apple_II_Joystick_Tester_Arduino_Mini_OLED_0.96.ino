@@ -4,7 +4,7 @@
 //
 // Patrice Freney - https://www.freney.net
 //
-// version 1.0 du 2025/02/05
+// version 1.0 du 2025/02/10
 
 // carte Arduino mini
 // ecran OLED noir et blanc de 128 x 64 pixels de 0.96 pouces
@@ -16,8 +16,8 @@
 // pour le joystick :
 // axe des x sur la broche A0 de l'Arduino
 // axe des y sur la broche A1 de l'Arduino
-// bouton BP0 sur la broche A2 de l'Arduino
-// bouton BP1 sur la broche A3 de l'Arduino
+// bouton PB0 sur la broche A2 de l'Arduino
+// bouton PB1 sur la broche A3 de l'Arduino
 
 // un bouton Joystick/paddles qui permet de sélectionner soit l'un soit l'autre
 // bouton branché sur la broche D10
@@ -107,8 +107,8 @@ void setup() {
   // définition des entrées
   pinMode(axex, INPUT);             // axe horizontal
   pinMode(axey, INPUT);             // axe vertical
-  pinMode(button_0, INPUT);         // bouton 0
-  pinMode(button_1, INPUT);         // bouton 1
+  pinMode(button_0, INPUT);         // bouton PB0
+  pinMode(button_1, INPUT);         // bouton PB1
   button.attach(button_jp, INPUT);  // Bounce2 : USE EXTERNAL PULL-UP
 
   // gestion des paramètres pour les boutons avec Bounce2
@@ -116,12 +116,12 @@ void setup() {
   button.setPressedState(LOW);  // Bounce2 : INDICATE THAT THE LOW STATE CORRESPONDS TO PHYSICALLY PRESSING THE BUTTON
 
   // définition des sorties
-  pinMode(led_button_0, OUTPUT);  // led 1 pour le bouton 0
-  pinMode(led_button_1, OUTPUT);  // led 2 pour le bouton 1
+  pinMode(led_button_0, OUTPUT);  // led 1 pour le bouton PB0
+  pinMode(led_button_1, OUTPUT);  // led 2 pour le bouton PB1
 }
 
 void loop() {
-  // lecture des entrées : boutons BP0 et BP1, ainsi que les potentiomètres X et Y
+  // lecture des entrées : boutons PB0 et PB1, ainsi que les potentiomètres X et Y
   ve_button0_valeur = analogRead(button_0);
   ve_button1_valeur = analogRead(button_1);
   ve_axex_valeur = analogRead(axex);
@@ -192,7 +192,7 @@ void loop() {
 
   // gestion du bouton 0
   display.setCursor(70, 23);
-  display.print("BP0 : ");
+  display.print("PB0 : ");
   if (ve_button0_valeur < 1000) {
     display.print("OFF");
     digitalWrite(led_button_0, LOW);
@@ -203,7 +203,7 @@ void loop() {
 
   // gestion du bouton 1
   display.setCursor(70, 33);
-  display.print("BP1 : ");
+  display.print("PB1 : ");
   if (ve_button1_valeur < 1000) {
     display.print("OFF");
     digitalWrite(led_button_1, LOW);
