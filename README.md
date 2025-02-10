@@ -68,7 +68,7 @@ For the printed circuit board, the minimum order from JLCPCB is 5 pieces. Each c
 Please note that I paid with PayPal, and that the manufacturer charges an additional €0.53.
 
 
-## Programmation
+## Programming
 
 The Arduido IDE application was used. There's nothing really special about the programming of this assembly. Almost every line of the program is documented. Sorry, the comments are in French.
 
