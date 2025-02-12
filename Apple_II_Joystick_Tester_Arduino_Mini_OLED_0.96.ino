@@ -7,7 +7,7 @@
 // version 1.0 du 2025/02/10
 
 // carte Arduino mini
-// ecran OLED noir et blanc de 128 x 64 pixels de 0.96 pouces
+// écran OLED noir et blanc de 128 x 64 pixels de 0.96 pouce
 
 // branchements des composants :
 // SDA de l'écran OLED sur la broche A4 de l'Arduino
@@ -91,7 +91,7 @@ void setup() {
   display.setTextSize(1);       // taille de l'écriture
   display.setTextColor(WHITE);  // écriture blanche, sinon noire par défaut
 
-  // affichage textes bienvenue, rien d'obligatoire
+  // affichage écran d’accueil, rien d'obligatoire
   display.setCursor(1, 10);
   display.print("Testeur de joysticks et paddles Apple ][");
   display.setCursor(1, 40);
