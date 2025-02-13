@@ -1,2 +1,0 @@
-$ git ls-files --other --ignored --exclude-standard
-.DS_Store
