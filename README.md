@@ -4,6 +4,9 @@
 
 As a collector of Apple hardware, I had a few (+30) Apple joysticks and paddles to test. As I didn't want to risk damaging an Apple IIe for the tests, a short circuit in old equipment can happen very quickly, so I decided to build myself a little test circuit.
 
+![Screenshot of the Apple Joystick and Paddles.](/pictures/joystick_and_paddles.jpg)
+
+
 The specifications were :
 - test the directions by displaying the coordinates on the screen and a moving cursor;
 - test the two buttons PB0 and PB1, display the result on the screen and light an LED for each.
@@ -55,7 +58,7 @@ The printed circuit board was manufactured by JLCPCB https://jlcpcb.com.
 
 The Arduino is soldered directly onto the circuit board, saving space in terms of height, as the case closes, and the whole unit is protected when stored. The connectors allow the Arduino to be quickly removed and replaced in the event of failure. This will not be the case here.
 
-![Screenshot of the pcb in is box.](/pictures/Testeur_Joystick_composants.jpg)
+![Screenshot of the pcb.](/pictures/Testeur_Joystick_composants.jpg)
 
 
 ## Cost
