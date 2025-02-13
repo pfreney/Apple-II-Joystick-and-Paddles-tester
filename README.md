@@ -59,7 +59,7 @@ The Arduino is soldered directly onto the circuit board, saving space in terms o
 The connectors allow the Arduino to be quickly removed and replaced in the event of failure. This will not be the case here.
 I haven't placed the Arduino on connectors for reasons of case height. The case closes and is fully protected.
 
-![Screenshot of the pcb in is box.](/pictures/Testeur_Joystick_composant.jpg)
+![Screenshot of the pcb in is box.](/pictures/Testeur_Joystick_composants.jpg)
 
 
 ## Cost
