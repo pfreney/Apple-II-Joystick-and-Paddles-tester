@@ -53,7 +53,7 @@ For the list of components:
 
 The printed circuit board was manufactured by JLCPCB https://jlcpcb.com.
 
-[!NOTE]
+!NOTE
 - the links are to AliExpress, they are given as examples only. The links may be dead, as the AliExpress seller may have stopped selling the desired product.
 - the above links are for batch purchases, not single units, for cost reasons.
 
