@@ -53,8 +53,9 @@ For the list of components:
 
 The printed circuit board was manufactured by JLCPCB https://jlcpcb.com.
 
-- note 1: the links are to AliExpress, they are given as examples only. The links may be dead, as the AliExpress seller may have stopped selling the desired product.
-- note 2: the above links are for batch purchases, not single units, for cost reasons.
+[!NOTE]
+- the links are to AliExpress, they are given as examples only. The links may be dead, as the AliExpress seller may have stopped selling the desired product.
+- the above links are for batch purchases, not single units, for cost reasons.
 
 The Arduino is soldered directly onto the circuit board, saving space in terms of height, as the case closes, and the whole unit is protected when stored. The connectors allow the Arduino to be quickly removed and replaced in the event of failure. This will not be the case here.
 
