@@ -2,14 +2,14 @@
 
 ## Introduction
 
-As a collector of Apple hardware, I had a few (+30) Apple joysticks and paddles to test. As I didn't want to risk damaging an Apple IIe for the tests, a short circuit in old equipment can happen very quickly, so I decided to build myself a little test circuit.
+As a collector of Apple hardware, I had over 30 Apple joysticks and paddles to test. I didn't want to risk damaging an Apple IIe during the tests, as a short circuit in old equipment can happen very easily.
 
 ![Screenshot of the Apple Joystick and Paddles.](/pictures/joystick_and_paddles.jpg)
 
 
 The specifications were :
 - test the directions by displaying the coordinates on the screen and a moving cursor;
-- test the two buttons PB0 and PB1, display the result on the screen and light an LED for each.
+- test the two buttons, PB0 and PB1, displaying the result on the screen and lighting an LED for each.
 
 The joysticks and paddles used with Apple IIs are very simply constructed: two potentiometers for the four directions, two resistors and two buttons. The schematics of the joystick and paddles are available in this repository.
 
@@ -21,7 +21,7 @@ The assembly allows you to connect either :
 Power is supplied by a standard USB charger and a 5-volt USC-C cable.
 
 The core of the assembly is an Arduino mini.\
-Information is displayed on a 0.96-inch screen, more than sufficient for this application.\
+Information is displayed on a 0.96-inch screen, which is more than sufficient for this application.\
 The idea is to display a small cross according to the position of the joysticks.\
 Horizontal and vertical mathematical positions are shown, as is the status of push-buttons PB0 and PB1.\
 Two additional small LEDs light up when the buttons are pressed.
@@ -57,7 +57,7 @@ The printed circuit board was manufactured by JLCPCB https://jlcpcb.com.
 > - the links are to AliExpress, they are given as examples only. The links may be dead, as the AliExpress seller may have stopped selling the desired product.
 > - the above links are for batch purchases, not single units, for cost reasons.
 
-The Arduino is soldered directly onto the circuit board, saving space in terms of height, as the case closes, and the whole unit is protected when stored. The connectors allow the Arduino to be quickly removed and replaced in the event of failure. This will not be the case here.
+The Arduino is soldered directly onto the circuit board, saving space in terms of height, as the case closes, and the whole unit is protected when stored. The connectors allow the Arduino to be quickly removed if needed. This will not be the case here.
 
 ![Screenshot of the pcb.](/pictures/Testeur_Joystick_composants.jpg)
 
@@ -69,7 +69,7 @@ The total cost, including postage, of the complete circuit is less than 10 € p
 In reality, it's more complicated to calculate, as I buy components in batches that I use to make other assemblies. To give you an idea, I bought a batch of 1200 various resistors for 5.79 € and a batch of 250 various push-buttons for 4.09 €.\
 So, if you order the components individually from any retailer, the price is likely to be different (I didn't do it myself).
 
-For the printed circuit board, the minimum order from JLCPCB is 5 pieces. Each circuit cost me 0.92 €, including postage and taxes to France (total 4.59 €. Please note that I paid with PayPal, and that the manufacturer charges an additional 0.53 €.
+For the printed circuit board, the minimum order from JLCPCB is 5 pieces. Each circuit cost me 0.92 €, including postage and taxes to France (total 4.59 €). Please note that I paid with PayPal, and that the manufacturer charges an additional 0.53 €.
 
 
 ## Programming
@@ -92,7 +92,7 @@ https://www.youtube.com/watch?v=9ZfeMaLszHQ
 ## Licence
 
 You can do what you like with it. I could be wrong, but I don't really think that a manufacturer will build this assembly to sell thousands of copies and earn millions of euros or dollars :wink:\
-For me, it's been a good and fun experience making this little montage, and that's why I'm making it freely available. 
+For me, it's been a good and fun experience making this little project, and that's why I'm making it freely available. 
 
 You can contact me for questions or informations here : https://www.freney.net (-> contact).
 
