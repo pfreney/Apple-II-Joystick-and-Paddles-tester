@@ -34,6 +34,7 @@ The whole unit is housed in a 100x60x25 mm ABS mounting box. Two holes have been
 
 ![Screenshot of the pcb in is box.](/pictures/Testeur_Joystick_boitier_complet.jpg)
 
+
 ## Construction
 
 For the list of components:
@@ -58,6 +59,8 @@ The Arduino is soldered directly onto the circuit board, saving space in terms o
 The connectors allow the Arduino to be quickly removed and replaced in the event of failure. This will not be the case here.
 I haven't placed the Arduino on connectors for reasons of case height. The case closes and is fully protected.
 
+![Screenshot of the pcb in is box.](/pictures/Testeur_Joystick_composant.jpg)
+
 
 ## Cost
 
@@ -73,6 +76,7 @@ Please note that I paid with PayPal, and that the manufacturer charges an additi
 ## Programming
 
 The Arduido IDE application was used. There's nothing really special about the programming of this assembly. Almost every line of the program is documented. Sorry, the comments are in French.
+The program is available in this repository.
 
 
 ## Use
@@ -89,8 +93,8 @@ https://www.youtube.com/watch?v=9ZfeMaLszHQ
 
 ## Licence
 
-You can do what you like with it. I could be wrong, but I don't really see an industrialist building this assembly to sell thousands of copies and earn millions of euros or dollars ;-)
-For me, it's been a goo and fun experience making this little montage, and that's why I'm making it freely available. 
+You can do what you like with it. I could be wrong, but I don't really think that a manufacturer will build this assembly to sell thousands of copies and earn millions of euros or dollars ;-)
+For me, it's been a good and fun experience making this little montage, and that's why I'm making it freely available. 
 
 You can contact me for questions or informations here : https://www.freney.net (-> contact).
 
