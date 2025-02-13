@@ -39,21 +39,21 @@ The whole unit is housed in a 100x60x25 mm ABS mounting box. Two holes have been
 
 For the list of components:
 
-- 1 x Arduino mini, for example at AliExpress: https://www.aliexpress.com/item/1994733794.html
-- 1 x 0.96-inch OLED I2C display (VCC, GND, SCL, SDA), e.g. from AliExpress: https://fr.aliexpress.com/item/1005006901360788.html
-- 1 x DE-9F female solder connector, e.g. from AliExpress: https://fr.aliexpress.com/item/4001214300548.html
-- 1 x 16-pin ZIF connector, e.g. from AliExpress: https://fr.aliexpress.com/item/32857974149.html
-- 2 x 150 kΩ smd 1206 resistors (R1, R2), e.g. from AliExpress: https://fr.aliexpress.com/item/1005005681179895.html
-- 1 x resistor (R3) smd 1206 10 kΩ, e.g. from AliExpress: https://fr.aliexpress.com/item/1005005681179895.html
-- 2 x resistor (R4, R5) smd 1206 180 Ω, e.g. from AliExpress: https://fr.aliexpress.com/item/1005005681179895.html
-- 1 x 2-pin smd pushbutton 3x6x2.5 mm, e.g. from AliExpress: https://fr.aliexpress.com/item/1005006364026072.html
-- 2 x LED smd 1206 white, e.g. from AliExpress: https://fr.aliexpress.com/item/4001031824623.html
-- 1 x ABS case 100x60x25 mm, e.g. from AliExpress: https://www.aliexpress.com/item/1005006412728406.html
+- 1 x Arduino mini: https://www.aliexpress.com/item/1994733794.html
+- 1 x 0.96-inch OLED I2C display (VCC, GND, SCL, SDA): https://fr.aliexpress.com/item/1005006901360788.html
+- 1 x DE-9F female solder connector: https://fr.aliexpress.com/item/4001214300548.html
+- 1 x 16-pin ZIF connector: https://fr.aliexpress.com/item/32857974149.html
+- 2 x 150 kΩ smd 1206 resistors (R1, R2): https://fr.aliexpress.com/item/1005005681179895.html
+- 1 x resistor (R3) smd 1206 10 kΩ: https://fr.aliexpress.com/item/1005005681179895.html
+- 2 x resistor (R4, R5) smd 1206 180 Ω: https://fr.aliexpress.com/item/1005005681179895.html
+- 1 x 2-pin smd pushbutton 3x6x2.5 mm: https://fr.aliexpress.com/item/1005006364026072.html
+- 2 x LED smd 1206 white: https://fr.aliexpress.com/item/4001031824623.html
+- 1 x ABS case 100x60x25 mm: https://www.aliexpress.com/item/1005006412728406.html
 
 The printed circuit board was manufactured by JLCPCB https://jlcpcb.com.
 
-Note 1: the above links are for batch purchases, not single units, for cost reasons.
-Note 2: the links may be dead, as the AliExpress seller may have stopped selling the desired product.
+- note 1: the links are to AliExpress, they are given as examples only. The links may be dead, as the AliExpress seller may have stopped selling the desired product.
+- note 2: the above links are for batch purchases, not single units, for cost reasons.
 
 The Arduino is soldered directly onto the circuit board, saving space in terms of height, as the case closes, and the whole unit is protected when stored.
 The connectors allow the Arduino to be quickly removed and replaced in the event of failure. This will not be the case here.
