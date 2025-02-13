@@ -32,7 +32,7 @@ The complete schematic is available in this repository.
 The whole unit is housed in a 100x60x25 mm ABS mounting box. Two holes have been drilled to accommodate the Arduino's USB-C power cable and DE-9F connector.
 
 
-![Screenshot of the pcb in is box.](/pictures/Testeur_Joystick_boitier_complet - 1.jpg)
+![Screenshot of the pcb in is box.](/pictures/Back.png)
 
 ## Construction
 
