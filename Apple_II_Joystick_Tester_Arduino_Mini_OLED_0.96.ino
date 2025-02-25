@@ -4,10 +4,11 @@
 //
 // Patrice Freney - https://www.freney.net
 //
-// version 1.0 du 2025/02/10
+// version 1.1 du 2025/02/25
+// clignotement des deux leds au démarrage afin de vérifier leur bon fonctionnement
 
 // carte Arduino mini
-// écran OLED noir et blanc de 128 x 64 pixels de 0.96 pouce
+// ecran OLED noir et blanc de 128 x 64 pixels de 0.96 pouces
 
 // branchements des composants :
 // SDA de l'écran OLED sur la broche A4 de l'Arduino
@@ -91,20 +92,7 @@ void setup() {
   display.setTextSize(1);       // taille de l'écriture
   display.setTextColor(WHITE);  // écriture blanche, sinon noire par défaut
 
-  // affichage écran d’accueil, rien d'obligatoire
-  display.setCursor(1, 10);
-  display.print("Testeur de joysticks et paddles Apple ][");
-  display.setCursor(1, 40);
-  display.print("Patrice Freney");
-  display.setCursor(62, 55);
-  display.print("v1.0 - 2025");
-  display.display();
-  delay(2000);  // ce n'est rien, quelques millisecondes dans une vie… ;-)
-  display.clearDisplay();
-  display.display();
-
-
-  // définition des entrées
+// définition des entrées
   pinMode(axex, INPUT);             // axe horizontal
   pinMode(axey, INPUT);             // axe vertical
   pinMode(button_0, INPUT);         // bouton PB0
@@ -118,6 +106,32 @@ void setup() {
   // définition des sorties
   pinMode(led_button_0, OUTPUT);  // led 1 pour le bouton PB0
   pinMode(led_button_1, OUTPUT);  // led 2 pour le bouton PB1
+
+  // affichage textes bienvenue, rien d'obligatoire
+  display.setCursor(1, 10);
+  display.print("Testeur de joysticks et paddles Apple ][");
+  display.setCursor(1, 40);
+  display.print("Patrice Freney");
+  display.setCursor(62, 55);
+  display.print("v1.1 - 2025");
+  display.display();
+
+  // petit clignotant pour montrer que les LEDs fonctionnent bien au démrrage
+  digitalWrite(led_button_0, HIGH);
+  digitalWrite(led_button_1, HIGH);
+  delay(250);
+  digitalWrite(led_button_0, LOW);
+  digitalWrite(led_button_1, LOW);
+  delay(250);
+  digitalWrite(led_button_0, HIGH);
+  digitalWrite(led_button_1, HIGH);
+  delay(250);
+  digitalWrite(led_button_0, LOW);
+  digitalWrite(led_button_1, LOW);
+  delay(1250);  // ce n'est rien, quelques millisecondes dans une vie… ;-)
+  display.clearDisplay();
+  display.display();
+ 
 }
 
 void loop() {
@@ -219,4 +233,3 @@ void loop() {
 
 
 // ************************************************************
-
