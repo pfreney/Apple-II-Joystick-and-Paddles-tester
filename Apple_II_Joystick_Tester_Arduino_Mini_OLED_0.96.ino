@@ -119,7 +119,7 @@ void setup() {
   display.print("v1.2 - 2025");
   display.display();
 
-  fonction_clignotant(3);  // petit clignotant pour montrer que les LEDs fonctionnent bien au démrrage
+  fonction_clignotant(3);  // petit clignotant pour montrer que les leds fonctionnent bien au démarrage
 
   delay(1250);  // ce n'est rien, quelques millisecondes dans une vie… ;-)
   display.clearDisplay();
