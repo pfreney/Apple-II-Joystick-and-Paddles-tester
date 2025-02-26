@@ -4,8 +4,9 @@
 //
 // Patrice Freney - https://www.freney.net
 //
-// version 1.1 du 2025/02/25
-// clignotement des deux leds au démarrage afin de vérifier leur bon fonctionnement
+// version 1.2 du 2025/02/26
+// v1.2 : ajout du clignotement de la led intégrée à la carte au démarrage
+// v1.1 : clignotement des deux leds au démarrage afin de vérifier leur bon fonctionnement
 
 // carte Arduino mini
 // ecran OLED noir et blanc de 128 x 64 pixels de 0.96 pouces
@@ -76,6 +77,7 @@ const byte button_1 = 3;       // bouton 1 broche A3
 #define button_jp 10           // Bounce2 // bouton joystick/paddles broche D10
 const byte led_button_0 = 11;  // led 1 broche D11
 const byte led_button_1 = 12;  // led 2 broche D12
+#define led_interne 13         // led interne à la carte broche D13
 
 
 void setup() {
@@ -92,7 +94,7 @@ void setup() {
   display.setTextSize(1);       // taille de l'écriture
   display.setTextColor(WHITE);  // écriture blanche, sinon noire par défaut
 
-// définition des entrées
+  // définition des entrées
   pinMode(axex, INPUT);             // axe horizontal
   pinMode(axey, INPUT);             // axe vertical
   pinMode(button_0, INPUT);         // bouton PB0
@@ -106,6 +108,7 @@ void setup() {
   // définition des sorties
   pinMode(led_button_0, OUTPUT);  // led 1 pour le bouton PB0
   pinMode(led_button_1, OUTPUT);  // led 2 pour le bouton PB1
+  pinMode(led_interne, OUTPUT);   // led interne
 
   // affichage textes bienvenue, rien d'obligatoire
   display.setCursor(1, 10);
@@ -116,22 +119,11 @@ void setup() {
   display.print("v1.1 - 2025");
   display.display();
 
-  // petit clignotant pour montrer que les LEDs fonctionnent bien au démrrage
-  digitalWrite(led_button_0, HIGH);
-  digitalWrite(led_button_1, HIGH);
-  delay(250);
-  digitalWrite(led_button_0, LOW);
-  digitalWrite(led_button_1, LOW);
-  delay(250);
-  digitalWrite(led_button_0, HIGH);
-  digitalWrite(led_button_1, HIGH);
-  delay(250);
-  digitalWrite(led_button_0, LOW);
-  digitalWrite(led_button_1, LOW);
+  fonction_clignotant(3);  // petit clignotant pour montrer que les LEDs fonctionnent bien au démrrage
+
   delay(1250);  // ce n'est rien, quelques millisecondes dans une vie… ;-)
   display.clearDisplay();
   display.display();
- 
 }
 
 void loop() {
@@ -233,3 +225,21 @@ void loop() {
 
 
 // ************************************************************
+// fonctions personnelles
+// ************************************************************
+
+// fonctions clignotant
+// permet de faire clignoter les leds externes et la led interne
+// avec le nombre saisi en paramètre
+int fonction_clignotant(int nombre_clignotant) {
+  for (int i = 0; i < nombre_clignotant; i++) {
+    digitalWrite(led_button_0, HIGH);
+    digitalWrite(led_button_1, HIGH);
+    digitalWrite(led_interne, HIGH);
+    delay(250);
+    digitalWrite(led_button_0, LOW);
+    digitalWrite(led_button_1, LOW);
+    digitalWrite(led_interne, LOW);
+    delay(250);
+  }
+}  // fin fonction fonction_clignotant
