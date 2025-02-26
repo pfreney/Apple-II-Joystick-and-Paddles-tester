@@ -116,7 +116,7 @@ void setup() {
   display.setCursor(1, 40);
   display.print("Patrice Freney");
   display.setCursor(62, 55);
-  display.print("v1.1 - 2025");
+  display.print("v1.2 - 2025");
   display.display();
 
   fonction_clignotant(3);  // petit clignotant pour montrer que les LEDs fonctionnent bien au démrrage
