@@ -4,7 +4,8 @@
 //
 // Patrice Freney - https://www.freney.net
 //
-// version 1.2 du 2025/02/26
+// version 1.3 du 2025/03/26
+// v1.3 : correction de la valeur de lecture des boutons (1000 -> 500). Merci à microbmen !
 // v1.2 : ajout du clignotement de la led intégrée à la carte au démarrage
 // v1.1 : clignotement des deux leds au démarrage afin de vérifier leur bon fonctionnement
 
@@ -116,7 +117,7 @@ void setup() {
   display.setCursor(1, 40);
   display.print("Patrice Freney");
   display.setCursor(62, 55);
-  display.print("v1.2 - 2025");
+  display.print("v1.3 - 2025");
   display.display();
 
   fonction_clignotant(3);  // petit clignotant pour montrer que les leds fonctionnent bien au démarrage
@@ -199,7 +200,7 @@ void loop() {
   // gestion du bouton 0
   display.setCursor(70, 23);
   display.print("PB0 : ");
-  if (ve_button0_valeur < 1000) {
+  if (ve_button0_valeur < 500) {
     display.print("OFF");
     digitalWrite(led_button_0, LOW);
   } else {
@@ -210,13 +211,14 @@ void loop() {
   // gestion du bouton 1
   display.setCursor(70, 33);
   display.print("PB1 : ");
-  if (ve_button1_valeur < 1000) {
+  if (ve_button1_valeur < 500) {
     display.print("OFF");
     digitalWrite(led_button_1, LOW);
   } else {
     display.print("ON");
     digitalWrite(led_button_1, HIGH);
   }
+
 
   display.display();  // mettre à jour l'affichage
   delay(10);          // petite temporisation
