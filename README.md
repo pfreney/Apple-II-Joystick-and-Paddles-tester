@@ -89,6 +89,13 @@ Here's a short video to explain how it works:
 https://www.youtube.com/watch?v=9ZfeMaLszHQ
 
 
+## Buy one
+
+If you don't want to build one yourself, you can buy one directly from my eBay page.
+Several options are available: complete assembly, assembly without case, component kit, circuit-printed alone... depending on your desires or technical skills.
+https://www.ebay.fr/itm/297121436085
+
+
 ## Licence
 
 You can do what you like with it. I could be wrong, but I don't really think that a manufacturer will build this assembly to sell thousands of copies and earn millions of euros or dollars :wink:\
